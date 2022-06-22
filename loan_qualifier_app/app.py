@@ -110,6 +110,26 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
+def save_qualifying_loans(qualifying_loans):
+    """Saves the qualifying loans to a CSV file.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+    # @TODO: Complete the usability dialog for savings the CSV Files.
+    # YOUR CODE HERE!
+    prompt = questionary.confirm("Save list of your qualifying loans?:").ask
+    if prompt:
+            csvpath = questionary.text("Enter save location:").ask()
+            csvpath = Path(csvpath)
+            if csvpath.exists():
+                save_csv(qualifying_loans)
+                print(f"Saved to '{csvpath}'!")
+            else:
+                sys.exit("Invalid filepath or filepath does not exist.")
+    else:
+        sys.exit("List not saved. Have a nice day!")
+
 def run():
     """The main function for running the script."""
 
