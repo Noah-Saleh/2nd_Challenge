@@ -7,7 +7,7 @@ This contains a helper function for loading and saving CSV files.
 import csv
 from pathlib import Path
 
-def load_csv(csvpath):
+def load_csv(csvpath):                                                  #reads the csv and turns the csv into a list of lists
     """Reads the CSV file from path provided.
 
     Args:
@@ -30,7 +30,7 @@ def load_csv(csvpath):
     return data
 
 
-def save_csv(qualifying_loans):
+def save_csv(qualifying_loans):                 #writes to csv
    
     csvpath = Path("./qualifying_loans.csv")
     with open(csvpath, 'w' , newline='') as csvfile:

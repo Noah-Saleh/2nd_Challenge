@@ -1,0 +1,23 @@
+    1  conda activate dev
+    2  cd homework/
+    3  cd challenges/
+    4  cd 2nd_challenge/
+    5  cd loan_qualifier_app/
+    6  cd 2nd_Challenge/
+    7  ls
+    8  cd loan_qualifier_app/
+    9  ls
+   10  cd ..
+   11  git status
+   12  git add -A
+   13  git status
+   14  git commit -m "Made code more readable. Created save_csv function in fileio.py & imported it into app.py."
+   15  git push
+   16  git status
+   17  git status
+   18  git add -A
+   19  git commit -m "Finished CLI & fixed some bugs."
+   20  git push
+   21  cd ..
+   22  cd 2nd_Challenge/
+   23  history 50 > terminal_history.txt

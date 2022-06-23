@@ -1,0 +1,15 @@
+    1  conda activate dev
+    2  cd homework/
+    3  cd challenges/
+    4  cd 2nd_challenge/
+    5  cd loan_qualifier_app/
+    6  git clone https://github.com/Noah-Saleh/2nd_Challenge.git
+    7  git status
+    8  cd 2nd_Challenge/
+    9  git status
+   10  git add -A
+   11  git status
+   12  git commit -m Added the pertinent files.
+   13  git commit -m "Added the pertinent files."
+   14  git push
+   15  history 50 > terminal_history1.txt

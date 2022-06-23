@@ -7,7 +7,7 @@ determine loan qualifications.
 """
 
 
-def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income):
+def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income):             #calculates monthly debt to monthly income ratio
     """Calculates users monthly debt to income ratio.
 
     Args:
@@ -21,7 +21,7 @@ def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income):
     return monthly_debt_ratio
 
 
-def calculate_loan_to_value_ratio(loan_amount, home_value):
+def calculate_loan_to_value_ratio(loan_amount, home_value):            #calculates loan to value income ratio
     """Calculates users loan to value ratio based on inputs.
 
     Args:
